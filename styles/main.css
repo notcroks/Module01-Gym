@@ -1245,6 +1245,7 @@ h3 {
     
     }
     .footer-box {
+        display: grid;
         grid-template-areas: 'a b'
                              'c c';
         gap: 10px;
