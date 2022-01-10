@@ -1128,20 +1128,20 @@ h3 {
     .bg {
         margin-bottom: 90px;
     }
-    .event-grid {
-        gap: 13px;
-    }
     .event-grid-item1 {
-        width: 349px;
-        height: 570px;
+        /*width: 349px;
+        height: 570px;*/
+        width: 100%;
     }
     .event-grid-item2 {
-        width: 349px;
-        height: 570px;
+        /*width: 349px;
+        height: 570px;*/
+        width: 100%;
     }
     .event-grid-item3 {
-        width: 349px;
-        height: 570px;
+        /*width: 349px;
+        height: 570px;*/
+        width: 100%;
     }
     .event-grid-date {
         margin-bottom: 13px;
@@ -1151,6 +1151,9 @@ h3 {
     }
     .event-grid {
         margin-bottom: 124px;
+    }
+    .event-grid-overlay {
+        width: 100%;
     }
 }
 
@@ -1165,16 +1168,19 @@ h3 {
         font-size: 37px;
     }
     .event-grid-item1 {
-        width: 329px;
-        height: 565px;
+        /*width: 329px;
+        height: 565px;*/
+        width: 100%;
     }
     .event-grid-item2 {
-        width: 329px;
-        height: 565px;
+        /*width: 329px;
+        height: 565px;*/
+        width: 100%;
     }
     .event-grid-item3 {
-        width: 329px;
-        height: 565px;
+        /*width: 329px;
+        height: 565px;*/
+        width: 100%;
     }
     .traning-grid-item:nth-child(1) .traning-name {
         margin-top: 149px;
@@ -1236,24 +1242,50 @@ h3 {
 
     .event-grid-item1:nth-child(1) {
         grid-area: a;
+        height: 60vw;
+        
     }
     .event-grid-item2:nth-child(2) {
         grid-area: b;
+        height: 60vw;
+        
     }
     .event-grid-item3:nth-child(3) {
         grid-area: c;
-    
+        height: 100vw;
+        
     }
-    .footer-box {
+    .event-grid {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 'a b'
                              'c c';
-        gap: 10px;
     }
+    .event-grid-name {
+        margin: 0 auto;
+        color: #2B3541;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 13px 20px;
+        background-color: #FBF138;
+        border: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    /*Здесь расписание тренировок делаем в 1 столбец*/
 }
 
 @media (max-width: 860px) {
-    
+    .event-grid-item1:nth-child(1) {
+       
+    }
+    .event-grid-item2:nth-child(2) {
+        
+    }
+    .event-grid-item3:nth-child(3) {
+        
+    }
     .law {
         display: block;
     }
@@ -1267,7 +1299,7 @@ h3 {
     }
 }
 
-@media (max-width: 568px) { /* Начинаются телефоны */
+@media (max-width: 650px) { 
     header {
         padding-top: 15px;
         padding-bottom: 10px;
@@ -1300,6 +1332,17 @@ h3 {
         justify-content: space-between;
         flex-basis: content;
     }
+    .event-grid-item1:nth-child(1) {
+        
+    }
+    .event-grid-item2:nth-child(2) {
+        
+    }
+    .event-grid-item3:nth-child(3) {
+        
+    }
+
+
     .footer-nav {
         display: flex;
         justify-content: space-between;
