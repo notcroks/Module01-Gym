@@ -1274,18 +1274,166 @@ h3 {
         bottom: 0;
     }
     /*Здесь расписание тренировок делаем в 1 столбец*/
+    .traning-grid-item img {
+        position: absolute;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+    .traning-grid-item1 img {
+        
+    }
+    .traning-grid-item2 img {
+
+    }
+    .traning-grid-item3 img {
+
+    }
+    .traning-grid-item4 img {
+        position: absolute;
+        bottom: 55px;
+        transition: 0.3s;
+    }
+    .traning-grid-item5 img {
+
+    }
+    .traning-grid-item6 img {
+
+    }
+    .traning-grid-item:nth-child(1):hover img {
+        bottom: 40px;
+    }
+    .traning-grid-item:nth-child(2):hover img {
+        bottom: 40px;
+    }
+    .traning-grid-item:nth-child(3):hover img {
+        bottom: 40px;
+    }
+    .traning-grid-item:nth-child(4):hover img {
+        bottom: 80px;
+    }
+    .traning-grid-item:nth-child(5):hover img {
+        bottom: 40px;
+    }
+    .traning-grid-item:nth-child(6):hover img {
+        bottom: 40px;
+    }
+
+    /*закончил здесь*/
+    .traning-grid-item:nth-child(1)
+    .traning-name {
+        position: relative;
+        margin-left: 100px;
+        margin-top: 50px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(1):hover
+    .traning-name {
+        margin-top: 20px;
+    }
+    .traning-grid-item:nth-child(2) 
+    .traning-name {
+        position: relative;
+        margin-top: 317px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(2):hover
+    .traning-name {
+        margin-top: 205px;
+    }
+    .traning-grid-item:nth-child(3) 
+    .traning-name {
+        position: relative;
+        margin-top: 226px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(3):hover
+    .traning-name {
+        margin-top: 115px;
+    }
+    .traning-grid-item:nth-child(4) 
+    .traning-name {
+        position: relative;
+        margin-top: 338px;
+        margin-bottom: 0;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(4):hover
+    .traning-name {
+        margin-top: 230px;
+    }
+    .traning-grid-item:nth-child(5) 
+    .traning-name {
+        position: relative;
+        margin-top: 197px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(5):hover
+    .traning-name {
+        margin-top: 90px;
+    }
+    .traning-grid-item:nth-child(6) 
+    .traning-name {
+        position: relative;
+        margin-top: 290px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(6):hover
+    .traning-name {
+        margin-top: 180px;
+    }
+    .traning-description {
+        display: none;
+        max-width: 444px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:hover
+    .traning-description{
+        display: block;
+        max-width: 444px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+
+
+    .traning-grid-item {
+        width: 100%;
+        height: 150px;
+        padding: 20px 20px;
+    }
+    .traning-grid-item1:nth-child(1) {
+        grid-area: a;
+    }
+    .traning-grid-item2:nth-child(2) {
+        grid-area: b;
+    }
+    .traning-grid-item3:nth-child(3){
+        grid-area: c;
+    }
+    .traning-grid-item4:nth-child(4) {
+        grid-area: d;
+        height: 206px;
+    }
+    .traning-grid-item5:nth-child(5) {
+        grid-area: e;
+    }
+    .traning-grid-item6:nth-child(6) {
+        grid-area: f;
+    }
+    .traning-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: none;
+        grid-template-areas: 'a'
+                             'd'
+                             'b'
+                             'e'
+                             'c'
+                             'f';
+    }
 }
 
 @media (max-width: 860px) {
-    .event-grid-item1:nth-child(1) {
-       
-    }
-    .event-grid-item2:nth-child(2) {
-        
-    }
-    .event-grid-item3:nth-child(3) {
-        
-    }
     .law {
         display: block;
     }
@@ -1331,15 +1479,6 @@ h3 {
         align-items: center;
         justify-content: space-between;
         flex-basis: content;
-    }
-    .event-grid-item1:nth-child(1) {
-        
-    }
-    .event-grid-item2:nth-child(2) {
-        
-    }
-    .event-grid-item3:nth-child(3) {
-        
     }
 
 
