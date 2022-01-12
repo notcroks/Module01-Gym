@@ -44,19 +44,22 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header-nav {
+.header-nav,
+.header-nav-modal {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     gap: 54px;
 }
-.header-nav a {
+.header-nav a,
+.header-nav-modal a {
     font-weight: 400;
     font-size: 18px;
     color: #2B3541;
     text-decoration: none;
 }
-.header-nav a::after {
+.header-nav a::after,
+.header-nav-modal a::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -64,7 +67,8 @@ h3 {
     margin-top: 10px;
     background: transparent;
 }
-.header-nav a:hover::after {
+.header-nav a:hover::after,
+.header-nav-modal a:hover::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -325,6 +329,15 @@ h3 {
     top: 185px;
     left: 30px;
 }
+.event-btn-mobile {
+    display: none;
+    background-image: url(../images/btn_mobile.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+}
 .event-cover:hover .event-grid-btn {
     background-color: #2B3541;
     color: #FBF138;
@@ -412,8 +425,8 @@ h3 {
 .traning-grid-item:nth-child(4) {
     grid-column: 1 / 1;
     grid-row: 2 / 5;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7), rgba(253, 249, 182, 0.45) 100%);
+    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
 }
@@ -783,6 +796,10 @@ h3 {
 .company-box-item6 {
     max-width: 204px;
 }
+.company-box-item7,
+.company-box-item8 {
+    display: none;
+}
 
 
 /* Подвал*/
@@ -926,7 +943,7 @@ h3 {
     padding: 30px 10px 20px;
     box-sizing: border-box;
 }
-#modal .header-nav {
+#modal .header-nav-modal {
     flex-direction: column;
     max-width: 100;
     align-items: flex-start;
@@ -937,7 +954,7 @@ h3 {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-#modal .header-nav li:nth-child(2) {
+#modal .header-nav-modal li:nth-child(2) {
     width: 100%;
     padding: 20px 0;
     border-top: 1px solid #CBCDCF;
@@ -1216,6 +1233,14 @@ h3 {
     .bg {
         padding-top: 20px;
         padding-bottom: 0;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .bg-text {
+        margin-left: 0;
+    }
+    .bg-link {
+        margin-left: 0;
     }
     .bg-down {
         display: none;
@@ -1273,6 +1298,12 @@ h3 {
         left: 0;
         bottom: 0;
     }
+    .event-btn-mobile {
+        display: block;
+    }
+    .event-grid-btn {
+        display: none;
+    }
     /*Здесь расписание тренировок делаем в 1 столбец*/
     .traning-grid-item img {
         position: absolute;
@@ -1309,7 +1340,7 @@ h3 {
         bottom: 40px;
     }
     .traning-grid-item:nth-child(4):hover img {
-        bottom: 80px;
+        bottom: 55px;
     }
     .traning-grid-item:nth-child(5):hover img {
         bottom: 40px;
@@ -1317,8 +1348,6 @@ h3 {
     .traning-grid-item:nth-child(6):hover img {
         bottom: 40px;
     }
-
-    /*закончил здесь*/
     .traning-grid-item:nth-child(1)
     .traning-name {
         position: relative;
@@ -1333,53 +1362,57 @@ h3 {
     .traning-grid-item:nth-child(2) 
     .traning-name {
         position: relative;
-        margin-top: 317px;
+        margin-left: 100px;
+        margin-top: 50px;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(2):hover
     .traning-name {
-        margin-top: 205px;
+        margin-top: 20px;
     }
     .traning-grid-item:nth-child(3) 
     .traning-name {
         position: relative;
-        margin-top: 226px;
+        margin-left: 100px;
+        margin-top: 50px;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(3):hover
     .traning-name {
-        margin-top: 115px;
+        margin-top: 20px;
     }
     .traning-grid-item:nth-child(4) 
     .traning-name {
         position: relative;
-        margin-top: 338px;
-        margin-bottom: 0;
+        margin-left: 100px;
+        margin-top: 50px;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(4):hover
     .traning-name {
-        margin-top: 230px;
+        margin-top: 50px;
     }
     .traning-grid-item:nth-child(5) 
     .traning-name {
         position: relative;
-        margin-top: 197px;
+        margin-left: 100px;
+        margin-top: 50px;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(5):hover
     .traning-name {
-        margin-top: 90px;
+        margin-top: 20px;
     }
     .traning-grid-item:nth-child(6) 
     .traning-name {
         position: relative;
-        margin-top: 290px;
+        margin-left: 100px;
+        margin-top: 50px;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(6):hover
     .traning-name {
-        margin-top: 180px;
+        margin-top: 20px;
     }
     .traning-description {
         display: none;
@@ -1393,9 +1426,12 @@ h3 {
         margin-left: 100px;
         margin-top: 10px;
     }
-
-
-
+    .traning-description-block {
+        display: block;
+        max-width: 444px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
     .traning-grid-item {
         width: 100%;
         height: 150px;
@@ -1434,6 +1470,103 @@ h3 {
 }
 
 @media (max-width: 860px) {
+    .btn-company {
+        display: none;
+    }
+    .company-box-item7,
+    .company-box-item8 {
+        display: block;
+    }
+    .btn-company-7 {
+        text-decoration: none;
+        color: #2B3541;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 22px 55px;
+        border: none;
+        background-color: #FBF138;
+    }
+    .btn-company-7:hover {
+        color: #FBF138;
+        background-color: #2B3541;
+        cursor: pointer;
+    }
+        /*.company-box-item2-grad {
+        background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       transition: .2s;
+    }*/
+    .company-box-item {
+        width: 100%;
+        max-width: 800px;
+        height: 140px;
+        margin: 0 auto;
+    }
+    .company-box-item8 {
+        background-image: url(../images/trainer.png);
+        /*width: 581px;
+        height: 335px;*/
+        height: 60vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .company-box-item1:nth-child(1) {
+        grid-area: a;
+    }
+    .company-box-item2:nth-child(2) {
+        display: none;
+    }
+    .company-box-item3:nth-child(3) {
+        grid-area: c;
+    }
+    .company-box-item4:nth-child(4) {
+        grid-area: d;
+    }
+    .company-box-item5:nth-child(5) {
+        grid-area: e;
+    }
+    .company-box-item6:nth-child(6) {
+        grid-area: f;
+    }
+    .company-box-item7:nth-child(7) {
+        grid-area: g;
+    }
+    /*.company-box-item8:nth-child(8) {
+        grid-area: h;
+    }*/
+    .company-box1,
+    .company-box2 {
+        display: grid;
+        width: 100%;
+        max-width: 800px;
+        justify-items: center;
+    }
+    .company-box1 {
+        padding-top: 100px;
+        justify-content: start;
+    }
+    .company-box2 {
+        padding-bottom: 0px;
+    }
+    .company-box {
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 'a'
+                             'c'
+                             'd'
+                             'e'
+                             'f'
+                             'g';
+    }
+    
+
+
+    
     .law {
         display: block;
     }
@@ -1447,11 +1580,10 @@ h3 {
     }
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 760px) {
     header {
         padding-top: 15px;
         padding-bottom: 10px;
-        
     }
     .header-nav {
         display: none;
@@ -1480,6 +1612,10 @@ h3 {
         justify-content: space-between;
         flex-basis: content;
     }
+}
+
+@media (max-width: 650px) { 
+   
 
 
     .footer-nav {
