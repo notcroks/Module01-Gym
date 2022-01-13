@@ -1235,6 +1235,7 @@ h3 {
         padding-bottom: 0;
         max-width: 550px;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
     .bg-text {
         margin-left: 0;
@@ -1470,6 +1471,19 @@ h3 {
 }
 
 @media (max-width: 860px) {
+    .btn-count {
+        right: 269px;
+    }
+    .subscribe-title {
+        max-width: 300px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+    }
+    .subscribe-form {
+        padding-top: 20px;
+    }
+
     .btn-company {
         display: none;
     }
