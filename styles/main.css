@@ -93,16 +93,12 @@ h3 {
     padding: 0;
     width: 30px;
     height: 30px;
-    opacity: 0.8;
+    transform: scale(1);
+    /*opacity: 0.8;*/
 }
 .button-inst:hover {
-    opacity: 1;
-    width: 38px;
-    height: 38px;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /*opacity: 1;*/
+    transform: scale(1.2666);
 }
 .button-face {
     background-image: url(../images/FB.svg);
@@ -112,16 +108,12 @@ h3 {
     padding: 0;
     width: 30px;
     height: 30px;
-    opacity: 0.8;
+    transform: scale(1);
+    /*opacity: 0.8;*/
 }
 .button-face:hover {
-    opacity: 1;
-    width: 38px;
-    height: 38px;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /*opacity: 1;*/
+    transform: scale(1.2666);
 }
 
 
@@ -184,6 +176,9 @@ h3 {
 .bg-titlemini span {
     margin-left: 10px;
 }
+.bg-title-discription {
+    margin-left: 91px;
+}
 .bg-text {
     font-weight: 400;
     font-size: 18px;
@@ -192,7 +187,6 @@ h3 {
     color: #2B3541;
     margin: 0;
     margin-bottom: 59px;
-    margin-left: 91px;
 }
 .bg-link {
     text-decoration: none;
@@ -203,7 +197,6 @@ h3 {
     letter-spacing: 0.03em;
     background-color: #FBF138;
     padding: 20px 30px;
-    margin-left: 91px;
 }
 .bg-link:hover {
     color: #FBF138;
@@ -460,7 +453,7 @@ h3 {
 }
 .traning-grid-item:nth-child(1):hover
 .traning-name {
-    margin-top: 65px;
+    margin-top: 85px;
 }
 .traning-grid-item:nth-child(2) 
 .traning-name {
@@ -470,7 +463,7 @@ h3 {
 }
 .traning-grid-item:nth-child(2):hover
 .traning-name {
-    margin-top: 205px;
+    margin-top: 230px;
 }
 .traning-grid-item:nth-child(3) 
 .traning-name {
@@ -480,7 +473,7 @@ h3 {
 }
 .traning-grid-item:nth-child(3):hover
 .traning-name {
-    margin-top: 115px;
+    margin-top: 140px;
 }
 .traning-grid-item:nth-child(4) 
 .traning-name {
@@ -491,7 +484,7 @@ h3 {
 }
 .traning-grid-item:nth-child(4):hover
 .traning-name {
-    margin-top: 230px;
+    margin-top: 240px;
 }
 .traning-grid-item:nth-child(5) 
 .traning-name {
@@ -501,7 +494,7 @@ h3 {
 }
 .traning-grid-item:nth-child(5):hover
 .traning-name {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 .traning-grid-item:nth-child(6) 
 .traning-name {
@@ -511,12 +504,7 @@ h3 {
 }
 .traning-grid-item:nth-child(6):hover
 .traning-name {
-    margin-top: 180px;
-}
-.traning-description {
-    display: none;
-    max-width: 280px;
-    transition: 0.3s;
+    margin-top: 210px;
 }
 .traning-grid-item:nth-child(1):hover img {
     bottom: 145px;
@@ -525,6 +513,16 @@ h3 {
 .traning-description{
     display: block;
     max-width: 280px;
+}
+.traning-description {
+    overflow: hidden;
+    /*display: none; */
+    max-width: 280px;
+    max-height: 0;
+    transition: 0.3s linear;
+}
+.traning-grid-item:hover .traning-description {
+    max-height: 500px;
 }
 
 
@@ -594,6 +592,7 @@ h3 {
     margin-top: 13px;
     margin-bottom: 0;
     padding-bottom: 86px;
+    padding-left: 6px;
 }
 .subscribe-label-default {
     display: none;
@@ -650,6 +649,29 @@ h3 {
 .subscribe-label-text a:hover {
     color: #2B3541;
     border-bottom: 1px #2B3541 solid;
+}
+.subscribe-form-after {
+    display: none;
+}
+.subscribe-email-after {
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 21px 150px 21px 19px;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: none;
+}
+.btn-subscribe-after {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 22px 43px;
+    border: none;
+    background-color: #FBF138;
+    width: 100%;
+    display: none;
 }
 /*.subscribe-form2 {
     display: flex;
@@ -784,16 +806,16 @@ h3 {
    transition: .2s;
 }
 .company-box-item3 {
-    max-width: 231px;
+    flex-basis: 22%;
 }
 .company-box-item4 {
-    max-width: 284px;
+    flex-basis: 27%;
 }
 .company-box-item5 {
-    max-width: 221px;
+    flex-basis: 21%;
 }
 .company-box-item6 {
-    max-width: 204px;
+    flex-basis: 18%;
 }
 .company-box-item7,
 .company-box-item8 {
@@ -1250,7 +1272,7 @@ h3 {
         position: relative;
         left: 1vw;
         max-width: 92%;
-        height: 75.6vw;
+        height: 78.5vw;
     }
     .box-gradient-left
     .box-gradient-right
@@ -1272,7 +1294,7 @@ h3 {
         right: 0px;
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: fill;
     }
     .main-banner {
         margin-bottom: 100px;
@@ -1323,25 +1345,10 @@ h3 {
         bottom: 20px;
         transition: 0.3s;
     }
-    .traning-grid-item1 img {
-        
-    }
-    .traning-grid-item2 img {
-
-    }
-    .traning-grid-item3 img {
-
-    }
     .traning-grid-item4 img {
         position: absolute;
         bottom: 55px;
         transition: 0.3s;
-    }
-    .traning-grid-item5 img {
-
-    }
-    .traning-grid-item6 img {
-
     }
     .traning-grid-item:nth-child(1):hover img {
         bottom: 40px;
@@ -1483,6 +1490,9 @@ h3 {
 }
 
 @media (max-width: 860px) {
+    .main-banner {
+        margin-bottom: 70px;
+    }
     .btn-count {
         right: 269px;
     }
@@ -1495,7 +1505,12 @@ h3 {
     .subscribe-form {
         padding-top: 20px;
     }
-
+    .event-grid {
+        margin-bottom: 90px;
+    }
+    .traning-grid {
+        margin-bottom: 100px;
+    }
     .btn-company {
         display: none;
     }
@@ -1528,7 +1543,7 @@ h3 {
     .company-box-item {
         width: 100%;
         max-width: 800px;
-        height: 140px;
+        height: 125px;
         margin: 0 auto;
     }
     .company-box-item8 {
@@ -1562,9 +1577,6 @@ h3 {
     .company-box-item7:nth-child(7) {
         grid-area: g;
     }
-    /*.company-box-item8:nth-child(8) {
-        grid-area: h;
-    }*/
     .company-box1,
     .company-box2 {
         display: grid;
@@ -1578,6 +1590,7 @@ h3 {
     }
     .company-box2 {
         padding-bottom: 0px;
+        margin-top: 20px;
     }
     .company-box {
         display: grid;
@@ -1589,10 +1602,6 @@ h3 {
                              'f'
                              'g';
     }
-    
-
-
-    
     .law {
         display: block;
     }
@@ -1640,8 +1649,24 @@ h3 {
     }
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 690px) { 
    
+
+    .subscribe-form-before {
+        display: none;
+    }
+    .subscribe-form-after {
+        display: block;
+    }
+    .subscribe-email-after {
+        display: block;
+    }
+    .btn-subscribe-after {
+        display: block;
+    }
+    .subscribe-label {
+        padding-left: 0px;
+    }
 
 
     .footer-nav {

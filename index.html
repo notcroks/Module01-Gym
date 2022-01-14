@@ -65,10 +65,12 @@
                             > 15 
                             <span>тренировок</span> 
                         </h2>
-                        <p class="bg-text">
-                            в области спортивной физиологии и нутрициологии
-                        </p>
-                        <a href="#" class="bg-link">узнать подробнее</a>
+                        <div class="bg-title-discription">
+                            <p class="bg-text">
+                                в области спортивной физиологии и нутрициологии
+                            </p>
+                            <a href="#" class="bg-link">узнать подробнее</a>
+                        </div>
                         <a href="#eventSport" class="bg-down">
                             <img src="images/Arrow.svg" alt="Указатель вниз">
                         </a>
@@ -211,25 +213,23 @@
                             Подпишитесь на рассылку
                         </h3>
                     </div>
-                    <form action="#" class="subscribe-form">
-                        <input type="email" placeholder="Ваш e-mail" name="email" class="subscribe-email" required>
-                        <button type="submit" class="btn-subscribe">Подписаться</button>
-                    </form>
+                    <div class="subscribe-form-before">
+                        <form action="#" class="subscribe-form">
+                            <input type="email" placeholder="Ваш e-mail" name="email" class="subscribe-email" required>
+                            <button type="submit" class="btn-subscribe">Подписаться</button>
+                        </form>
+                    </div>
+                    <div class="subscribe-form-after">
+                        <form action="#" class="subscribe-form-after">
+                            <input type="email" placeholder="Ваш e-mail" name="email" class="subscribe-email-after" required>
+                        </form>
+                    </div> 
                     <label class="subscribe-label" for="subscribe-checkbox">
                         <input class="subscribe-label-default" type="checkbox" id="subscribe-checkbox">
                         <span class="subscribe-label-new"></span>
                         <span class="subscribe-label-text">Согласен с обработкой <a href="#"> персональных данных</a></span>
-                    </label>
-                    <!--<p class='subscribe-person subscribe-person-none'></p>
-                    <span class="subscribe-person-text">
-                        Согласен с обработкой <a href="#" class="subscribe-person-law">персональных данных </a>   
-                    </span>  -->     
-                    <!--<form action="#" class="subscribe-form2">
-                        <input type="checkbox" required class="subscribe-person">
-                        <p class="subscribe-person-text">
-                            Согласен с обработкой <a href="#" class="subscribe-person-law">персональных данных </a>   
-                        </p> 
-                    </form>  -->           
+                    </label>     
+                    <button type="submit" class="btn-subscribe-after">Подписаться</button>
                 </div>
             </div>    
         </div>
