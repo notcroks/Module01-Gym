@@ -1667,7 +1667,10 @@ h3 {
     .subscribe-label {
         padding-left: 0px;
     }
-
+    .subscribe-email-after {
+        padding: 21px 0px 21px 19px;
+        width: 97%;
+    }
 
     .footer-nav {
         display: flex;
