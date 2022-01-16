@@ -2046,6 +2046,12 @@ h3 {
     }
 
 
+    .btn-count {
+        right: 255px;
+        top: 44px;
+        width: 31px;
+        height: 31px;
+    }
 
 
     .law-protection {
