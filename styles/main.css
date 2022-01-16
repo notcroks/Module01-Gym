@@ -1011,6 +1011,7 @@ h3 {
     display: none;
     background: rgba(0, 0, 0, 0.5);
     border: none;
+    z-index: 1;
 }
 .popup {
     background-color: #F3F3F3;
@@ -1113,7 +1114,7 @@ h3 {
     font-weight: 400;
 	padding: 21px 246px 21px 25px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 50px;
     outline: none;
 }
@@ -1339,6 +1340,13 @@ h3 {
     .event-grid-btn {
         display: none;
     }
+    .event-grid-date {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .event-grid-title {
+        margin-left: 20px;
+    }
     /*Здесь расписание тренировок делаем в 1 столбец*/
     .traning-grid-item img {
         position: absolute;
@@ -1494,13 +1502,15 @@ h3 {
         margin-bottom: 70px;
     }
     .btn-count {
-        right: 269px;
+        right: 266px;
+        top: 50px;
     }
     .subscribe-title {
         max-width: 300px;
         text-align: center;
         position: relative;
         margin: 0 auto;
+        padding-bottom: 51px;
     }
     .subscribe-form {
         padding-top: 20px;
@@ -1533,13 +1543,7 @@ h3 {
         background-color: #2B3541;
         cursor: pointer;
     }
-        /*.company-box-item2-grad {
-        background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%);
-       position: absolute;
-       width: 100%;
-       height: 100%;
-       transition: .2s;
-    }*/
+   
     .company-box-item {
         width: 100%;
         max-width: 800px;
@@ -1555,6 +1559,7 @@ h3 {
         background-size: cover;
         background-position: center;
         position: relative;
+        margin-bottom: 80px;
     }
     .company-box-item1:nth-child(1) {
         grid-area: a;
@@ -1647,10 +1652,23 @@ h3 {
         justify-content: space-between;
         flex-basis: content;
     }
+    .event-grid-title {
+        font-size: 22px;
+        max-width: 155px;
+    }
 }
 
 @media (max-width: 690px) { 
    
+    .traning-header p {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    .traning-title {
+        max-width: 220px;
+    }
 
     .subscribe-form-before {
         display: none;
@@ -1671,6 +1689,10 @@ h3 {
         padding: 21px 0px 21px 19px;
         width: 97%;
     }
+    .btn-count {
+        right: 276px;
+        top: 49px;
+    }
 
     .footer-nav {
         display: flex;
@@ -1678,4 +1700,365 @@ h3 {
         gap: 0;
     }
     
+    .popup {
+        max-width: 360px;
+        margin: 20px auto;
+    }
+    .btn-popup {
+        padding: 21px 115px;
+    } 
+    .popup-title {
+        padding-top: 56px;
+        font-size: 16px;
+        line-height: 19.2px;
+        max-width: 230px; 
+        margin-bottom: 16px;
+    }
+    .yellow-count {
+        width: 31px;
+        height: 31px;
+        top: 34px;
+        left: 25px;
+    }
+    .popup-text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 230px;
+        margin-bottom: 28px;
+    }
+    .popup-form {
+        padding-bottom: 40px;
+    }
+    .popup-email {
+        padding: 21px 101px 21px 25px;
+        margin-left: 10px;
+    }
+    .popup-phone {
+        padding: 21px 100px 21px 25px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 585px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+    .bg-title {
+        line-height: 45px;
+        margin-bottom: 40px;
+    }
+    .bg {
+        margin-bottom: 60px;
+    }
+
+    .traning-grid-item {
+        font-size: 16px;
+    }
+    .company-box-item8 {
+        margin-bottom: 60px;
+    }
+
+    .footer {
+        background-color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    h1 {
+        font-size: 26px;
+    }
+    .bg-title {
+        line-height: 32.5px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .bg-title-discription {
+        margin-left: 0;
+    }
+    .bg-text {
+        font-size: 16px;
+        max-width: 290px;
+        line-height: 24px;
+    }
+    .bg-link {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+        max-width: 601px;
+        text-align: center;
+    }
+    .main-banner {
+        margin-bottom: 80px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .event-title {
+        padding-bottom: 20px;
+    }
+    .event-grid {
+        margin-bottom: 80px;
+        gap: 10px;
+    }
+    .event-grid-date {
+        margin-bottom: 16px;
+    }
+    .event-grid-title {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .traning-title {
+        line-height: 31.69px;
+    }
+    .traning-header p {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .p-date {
+        font-size: 16px;
+    }
+    .traning-name {
+        font-size: 16px;
+    }
+    .traning-grid-item {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .traning-grid-item img {
+        width: 12vw;
+        height: 12vw;
+    }
+    .traning-grid-item {
+        height: 114px;
+    }
+    .traning-grid-item img {
+        position: absolute;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+    .traning-grid-item4 img {
+        position: absolute;
+        bottom: 55px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(1):hover img {
+        bottom: 30px;
+    }
+    .traning-grid-item:nth-child(2):hover img {
+        bottom: 30px;
+    }
+    .traning-grid-item:nth-child(3):hover img {
+        bottom: 30px;
+    }
+    .traning-grid-item:nth-child(4):hover img {
+        bottom: 55px;
+    }
+    .traning-grid-item:nth-child(5):hover img {
+        bottom: 30px;
+    }
+    .traning-grid-item:nth-child(6):hover img {
+        bottom: 30px;
+    }
+
+
+    .traning-grid-item:nth-child(1)
+    .traning-name {
+        position: relative;
+        margin-left: 76px;
+        margin-top: 23px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(1):hover
+    .traning-name {
+        margin-top: 5px;
+    }
+    .traning-grid-item:nth-child(2) 
+    .traning-name {
+        position: relative;
+        margin-left: 76px;;
+        margin-top: 18px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(2):hover
+    .traning-name {
+        margin-top: 5px;
+    }
+    .traning-grid-item:nth-child(3) 
+    .traning-name {
+        position: relative;
+        margin-left: 76px;
+        margin-top: 25px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(3):hover
+    .traning-name {
+        margin-top: 5px;
+    }
+    .traning-grid-item:nth-child(4) 
+    .traning-name {
+        position: relative;
+        margin-left: 76px;
+        margin-top: 55px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(4):hover
+    .traning-name {
+        margin-top: 55px;
+    }
+    .traning-grid-item:nth-child(5) 
+    .traning-name {
+        position: relative;
+        margin-left: 76px;
+        margin-top: 21px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(5):hover
+    .traning-name {
+        margin-top: 5px;
+    }
+    .traning-grid-item:nth-child(6) 
+    .traning-name {
+        position: relative;
+        margin-left: 76px;
+        margin-top: 21px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(6):hover
+    .traning-name {
+        margin-top: 5px;
+    }
+    .traning-description {
+        display: none;
+        max-width: 444px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:hover
+    .traning-description{
+        display: block;
+        max-width: 444px;
+        margin-left: 76px;
+        margin-top: 5px;
+    }
+    .traning-description-block {
+        display: block;
+        max-width: 444px;
+        margin-left: 76px;
+        margin-top: 5px;
+    }
+    .traning-grid {
+        margin-bottom: 80px;
+    }
+    .subscribe-header {
+        padding-bottom: 40px;
+    }
+    .subscribe-title {
+        line-height: 31.69px;
+        padding-top: 57px;
+    }
+    .subscribe-email-after {
+        width: 96%;
+    }
+    .subscribe-label {
+        padding-bottom: 40px;
+    }
+    .company-box1 {
+        padding-top: 80px;
+        height: 165px;
+        padding-bottom: 0;
+    }
+    .company-p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .company-p-item1 {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .company-box {
+        gap: 40px;
+    }
+    .company-box2 {
+        margin-top: 0;
+    }
+    .company-title {
+        font-size: 16px;
+    }
+    .company-box2 .company-title {
+        margin-bottom: 16px;
+    }
+    .company-box-item {
+        height: 123px;
+    }
+    .company-p-item3 {
+        max-width: 208px;
+    }
+    .company-p-item4 {
+        max-width: 223px;
+    }
+    .company-p-item5 {
+        max-width: 184px;
+    }
+    .company-p-item6 {
+        max-width: 184px;
+    }
+    .company-box-item6 {
+        height: 140px;
+    }
+    .company-box-item7 {
+        height: 90px;
+    }
+    .btn-company-7 {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+        max-width: 601px;
+        text-align: center;
+    }
+    .company-box-item8 {
+        height: 60vw;
+        margin-bottom: 80px;
+    }
+    .company-box {
+        grid-template-areas: none;
+    }
+    .company-box2 {
+        justify-content: unset;
+    }
+    .company-box-item3 {
+        margin-top: 40px;
+    }
+    .footer-box {
+        padding-top: 0px;
+    }
+    .footer-nav a {
+        font-size: 12px;
+    }
+    .footer-nav {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .footer-box {
+        margin-bottom: 40px;
+    }
+
+
+
+
+    .law-protection {
+        margin-bottom: 16px;
+    }
+    .law {
+        font-size: 12px
+    }
+}
+
+@media (max-width: 415px) {
+    
+    .law {
+        font-size: 10px
+    }
 }
