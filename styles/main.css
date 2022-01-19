@@ -53,27 +53,25 @@ h3 {
 }
 .header-nav a,
 .header-nav-modal a {
+    position: relative;
     font-weight: 400;
     font-size: 18px;
     color: #2B3541;
     text-decoration: none;
 }
-/*.header-nav a::after,
-.header-nav-modal a::after {
-    content: '';
-    width: 100%;
-    height: 1px;
+.header-nav a::after {
     display: block;
-    margin-top: 10px;
-    background: transparent;
-}*/
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color:  #2B3541;
+    /*transition: width .5s ease-in-out, left .5s ease-in-out;*/
+    left: 0%;
+    bottom: -10px;
+}
 .header-nav a:hover::after {
-    content: '';
     width: 100%;
-    height: 1px;
-    display: block;
-    margin-top: 10px;
-    background-color: #2B3541;
 }
 .button {
     display: flex;
@@ -412,13 +410,12 @@ h3 {
 .traning-grid-item:hover {
     background: rgba(243, 243, 243, .5);
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
-    border: none;
+    border: 1px solid transparent;
 }
 .traning-grid-item:nth-child(4) {
     grid-column: 1 / 1;
     grid-row: 2 / 5;
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7), rgba(253, 249, 182, 0.45) 100%);
-    
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
 }
@@ -517,12 +514,13 @@ h3 {
 .traning-description {
     overflow: hidden;
     /*display: none; */
-    max-width: 280px;
+    /*max-width: 280px;*/
     max-height: 0;
     transition: 0.3s linear;
 }
 .traning-grid-item:hover .traning-description {
     max-height: 500px;
+    padding-top: 20px;
 }
 
 
