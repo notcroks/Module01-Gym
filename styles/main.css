@@ -406,6 +406,7 @@ h3 {
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .traning-grid-item:hover {
     background: rgba(243, 243, 243, .5);
