@@ -506,21 +506,19 @@ h3 {
 .traning-grid-item:nth-child(1):hover img {
     bottom: 145px;
 }
-.traning-grid-item:hover
+/*.traning-grid-item:hover
 .traning-description{
     display: block;
     max-width: 280px;
-}
+}*/
 .traning-description {
     overflow: hidden;
-    /*display: none; */
-    /*max-width: 280px;*/
     max-height: 0;
     transition: 0.3s linear;
 }
 .traning-grid-item:hover .traning-description {
-    max-height: 500px;
-    padding-top: 20px;
+    max-height: 150px;
+    /*padding-top: 20px;*/
 }
 
 
@@ -641,7 +639,8 @@ h3 {
     line-height: 150%;
     font-weight: 400;
     color: #8F949A;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     border-bottom: 1px #8F949A solid;
 }
 .subscribe-label-text a:hover {
@@ -757,6 +756,7 @@ h3 {
     justify-content: space-between;
     padding-top: 160px;
     padding-bottom: 82px;
+    gap: 20px;
 }
 .company-p-item1 {
     margin-top: 20px;
@@ -853,11 +853,28 @@ h3 {
     gap: 90px;
 }
 .footer-nav a {
+    position: relative;
     font-weight: 400;
     font-size: 14px;
     color: #2B3541;
     text-decoration: none;
 }
+.footer-nav a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color:  #2B3541;
+    /*transition: width .5s ease-in-out, left .5s ease-in-out;*/
+    left: 0%;
+    bottom: -10px;
+}
+.footer-nav a:hover::after {
+    width: 100%;
+}
+
+
 .footer-button {
     display: flex;
     justify-content: space-between;
@@ -901,6 +918,10 @@ h3 {
     padding: 0;
     width: 27px;
     height: 27px;
+    transform: scale(1);
+}
+.footer-button-inst:hover {
+    transform: scale(1.2666);
 }
 .footer-button-face {
     align-items: center;
@@ -910,6 +931,10 @@ h3 {
     padding: 0;
     width: 27px;
     height: 27px;
+    transform: scale(1);
+}
+.footer-button-face:hover {
+    transform: scale(1.2666);
 }
 
 
@@ -1194,6 +1219,25 @@ h3 {
     }
 }
 
+@media (max-width: 1175px) { /*Ломается информация о компании*/
+    .company-box2 {
+        flex-wrap: wrap;
+        gap: 20px 15%;
+        justify-content: space-around;
+    }
+    .company-box-item3,
+    .company-box-item4,
+    .company-box-item5,
+    .company-box-item6 {
+        width: 35%;
+        flex-basis: auto;
+    }
+    .company-box-item6 {
+        flex: 0 0 35%;
+    }
+}
+
+
 @media (max-width: 1112px) { /* Начинаются планшеты */
     .header-item {
         flex-basis: 84.7%;
@@ -1241,8 +1285,8 @@ h3 {
     }
     .footer-nav {
         display: flex;
-        justify-content: space-evenly;
-        gap: 90px;
+        justify-content: space-between;
+        gap: 0;
     }
 }
 
@@ -1281,7 +1325,8 @@ h3 {
         position: relative;
         top: 4px;
         right: 0px;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
     .box-gradient-right {
         height: 100%;
@@ -1293,7 +1338,8 @@ h3 {
         right: 0px;
         width: 100%;
         height: auto;
-        object-fit: fill;
+        -o-object-fit: fill;
+           object-fit: fill;
     }
     .main-banner {
         margin-bottom: 100px;
@@ -1586,10 +1632,12 @@ h3 {
         width: 100%;
         max-width: 800px;
         justify-items: center;
+        justify-content: flex-start;
     }
     .company-box1 {
         padding-top: 100px;
         justify-content: start;
+        gap: 0;
     }
     .company-box2 {
         padding-bottom: 0px;
@@ -1615,6 +1663,10 @@ h3 {
     .law-text {
         display: flex;
         justify-content: center;
+    }
+    .law-text {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -1668,6 +1720,9 @@ h3 {
         max-width: 220px;
     }
 
+    .subscribe-header {
+        padding-bottom: 40px;
+    }
     .subscribe-form-before {
         display: none;
     }
@@ -1682,6 +1737,7 @@ h3 {
     }
     .subscribe-label {
         padding-left: 0px;
+        padding-bottom: 50px;
     }
     .subscribe-email-after {
         padding: 21px 0px 21px 19px;
@@ -1803,10 +1859,12 @@ h3 {
     }
     .event-grid-date {
         margin-bottom: 16px;
+        font-size: 12px;
     }
     .event-grid-title {
         font-size: 16px;
         line-height: 19.2px;
+        max-width: 120px;
     }
     .traning-title {
         line-height: 31.69px;
@@ -1826,8 +1884,8 @@ h3 {
         line-height: 18px;
     }
     .traning-grid-item img {
-        width: 12vw;
-        height: 12vw;
+        width: 10vw;
+        height: 10vw;
     }
     .traning-grid-item {
         height: 114px;
@@ -2043,14 +2101,12 @@ h3 {
         margin-bottom: 40px;
     }
 
-
     .btn-count {
         right: 255px;
         top: 44px;
         width: 31px;
         height: 31px;
     }
-
 
     .law-protection {
         margin-bottom: 16px;
@@ -2060,9 +2116,155 @@ h3 {
     }
 }
 
-@media (max-width: 415px) {
-    
+@media (max-width: 425px) {
+    .event-grid-name {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .traning-description {
+        line-height: 14px;
+        margin: 0 auto;
+    }
+    .traning-name {
+        line-height: 16px;
+    }
+    .traning-grid-item:nth-child(1)
+    .traning-name {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 23px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(1):hover
+    .traning-name {
+        margin-top: 0px;
+    }
+    .traning-grid-item:nth-child(2) 
+    .traning-name {
+        position: relative;
+        margin-left: 60px;;
+        margin-top: 18px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(2):hover
+    .traning-name {
+        margin-top: 0px;
+    }
+    .traning-grid-item:nth-child(3) 
+    .traning-name {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 25px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(3):hover
+    .traning-name {
+        margin-top: 0px;
+    }
+    .traning-grid-item:nth-child(4) 
+    .traning-name {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 55px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(4):hover
+    .traning-name {
+        margin-top: 55px;
+    }
+    .traning-grid-item:nth-child(5) 
+    .traning-name {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 21px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(5):hover
+    .traning-name {
+        margin-top: 0px;
+    }
+    .traning-grid-item:nth-child(6) 
+    .traning-name {
+        position: relative;
+        margin-left: 60px;
+        margin-top: 21px;
+        transition: 0.3s;
+    }
+    .traning-grid-item:nth-child(6):hover
+    .traning-name {
+        margin-top: 0px;
+    }
+    .traning-grid-item:hover
+    .traning-description{
+        margin-left: 60px;
+    }
+    .traning-description-block {
+        margin-left: 60px;
+    }
+
     .law {
         font-size: 10px
+    }
+}
+
+@media (max-width: 388px) {
+    .event-grid-title {
+        font-size: 12px;
+        max-width: 90px;
+    }
+    .event-grid-date {
+        margin-bottom: 8px;
+    }
+    .traning-description {
+        line-height: 12px;
+    }
+    .traning-name {
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .traning-description {
+        line-height: 12px;
+    }
+    .traning-name {
+        line-height: 14px;
+    }
+    .traning-grid-item:nth-child(1)
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:nth-child(2) 
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:nth-child(3) 
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:nth-child(4) 
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:nth-child(5) 
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:nth-child(6) 
+    .traning-name {
+        margin-left: 45px;
+    }
+    .traning-grid-item:hover
+    .traning-description{
+        margin-left: 45px;
+    }
+    .traning-description-block {
+        margin-left: 45px;
+    }
+}
+
+@media (max-width: 335px) {
+    .btn-count {
+        right: 245px;
     }
 }
