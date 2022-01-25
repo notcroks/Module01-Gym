@@ -374,7 +374,7 @@ h3 {
 .traning-grid-item {
     font-size: 18px;
     border: 1px solid rgb(43 52 64 / 50%);
-    box-shadow: 0px 0px 0px rgba(43, 53, 65, 0);
+    box-shadow: 0px 0px 0px transparent;
     padding: 20px 30px;
     box-sizing: border-box;
     position: relative;
