@@ -66,8 +66,8 @@ h3 {
     height: 1px;
     width: 0;
     background-color:  #2B3541;
-    /*transition: width .5s ease-in-out, left .5s ease-in-out;*/
     left: 0%;
+    transition: 0.3s;
     bottom: -10px;
 }
 .header-nav a:hover::after {
@@ -80,7 +80,6 @@ h3 {
     background-color: transparent;
     padding: 0;
     width: 90px;
-    /*gap: 30px;*/
     opacity: 0.8;
 }
 .button-inst {
@@ -92,10 +91,9 @@ h3 {
     width: 30px;
     height: 30px;
     transform: scale(1);
-    /*opacity: 0.8;*/
+    transition: 0.3s;
 }
 .button-inst:hover {
-    /*opacity: 1;*/
     transform: scale(1.2666);
 }
 .button-face {
@@ -107,10 +105,9 @@ h3 {
     width: 30px;
     height: 30px;
     transform: scale(1);
-    /*opacity: 0.8;*/
+    transition: 0.3s;
 }
 .button-face:hover {
-    /*opacity: 1;*/
     transform: scale(1.2666);
 }
 
@@ -195,6 +192,7 @@ h3 {
     letter-spacing: 0.03em;
     background-color: #FBF138;
     padding: 20px 30px;
+    transition: 0.3s;
 }
 .bg-link:hover {
     color: #FBF138;
@@ -254,7 +252,6 @@ h3 {
     width: 367px;
     height: 600px;
 }
-
 .event-grid-date {
     margin: 0 auto;
     margin-top: 35px;
@@ -266,9 +263,7 @@ h3 {
     opacity: 0.6;
 }
 .event-grid-title {
-    margin: 0 auto;
     margin-left: 30px;
-    margin-bottom: 412px;
     color: #2B3541;
     font-size: 28px;
     font-weight: 700;
@@ -277,7 +272,6 @@ h3 {
 }
 .event-grid-name {
     margin: 0 auto;
-    /*max-width: 366.98px;*/
     color: #2B3541;
     font-size: 18px;
     font-weight: 400;
@@ -318,6 +312,7 @@ h3 {
     position: absolute;
     top: 185px;
     left: 30px;
+    transition: 0.3s;
 }
 .event-btn-mobile {
     display: none;
@@ -379,7 +374,12 @@ h3 {
 .traning-grid-item {
     font-size: 18px;
     border: 1px solid rgb(43 52 64 / 50%);
+    box-shadow: 0px 0px 0px rgba(43, 53, 65, 0);
     padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 .traning-grid-item:nth-child(1) {
     grid-column: 1 / 1;
@@ -401,12 +401,6 @@ h3 {
 .traning-grid-item:nth-child(6) {
     grid-column: 3 / 4;
     grid-row: 3 / 5;
-}
-.traning-grid-item {
-    box-sizing: border-box;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
 }
 .traning-grid-item:hover {
     background: rgba(243, 243, 243, .5);
@@ -507,19 +501,15 @@ h3 {
 .traning-grid-item:nth-child(1):hover img {
     bottom: 145px;
 }
-/*.traning-grid-item:hover
-.traning-description{
-    display: block;
-    max-width: 280px;
-}*/
+
 .traning-description {
     overflow: hidden;
     max-height: 0;
     transition: 0.3s linear;
+    line-height: 1.5
 }
 .traning-grid-item:hover .traning-description {
     max-height: 150px;
-    /*padding-top: 20px;*/
 }
 
 
@@ -804,12 +794,11 @@ h3 {
     background-color:  #2B3541;
     left: 0%;
     bottom: -10px;
+    transition: 0.3s;
 }
 .footer-nav a:hover::after {
     width: 100%;
 }
-
-
 .footer-button {
     display: flex;
     justify-content: space-between;
@@ -854,6 +843,7 @@ h3 {
     width: 27px;
     height: 27px;
     transform: scale(1);
+    transition: 0.3s;
 }
 .footer-button-inst:hover {
     transform: scale(1.2666);
@@ -867,26 +857,36 @@ h3 {
     width: 27px;
     height: 27px;
     transform: scale(1);
+    transition: 0.3s;
 }
 .footer-button-face:hover {
     transform: scale(1.2666);
 }
-
-
 .law {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     font-size: 14px;
     padding-bottom: 21px;
-    opacity: 0.3;
 }
 .law-text {
+    color: #2B3541;
     margin: 0;
+    opacity: 0.3;
+    display: inline-block;
+}
+.law-protection {
+    opacity: 0.3;
 }
 .law-web {
     color: #2B3541;
     margin: 0;
+    opacity: 0.3;
+}
+.law-web:hover {
+    cursor: pointer;
+    color: #2B3541;
+    opacity: 1;
 }
 
 /* Modal */
@@ -1073,7 +1073,7 @@ h3 {
     }
 }
 
-@media (max-width: 1400px) { /* Уменьшаем размер девушки и т.д. */
+@media (max-width: 1400px) {
     .bg-box {
         right: 15px;
     }
@@ -1098,18 +1098,12 @@ h3 {
         margin-bottom: 90px;
     }
     .event-grid-item1 {
-        /*width: 349px;
-        height: 570px;*/
         width: 100%;
     }
     .event-grid-item2 {
-        /*width: 349px;
-        height: 570px;*/
         width: 100%;
     }
     .event-grid-item3 {
-        /*width: 349px;
-        height: 570px;*/
         width: 100%;
     }
     .event-grid-date {
@@ -1156,18 +1150,12 @@ h3 {
         font-size: 37px;
     }
     .event-grid-item1 {
-        /*width: 329px;
-        height: 565px;*/
         width: 100%;
     }
     .event-grid-item2 {
-        /*width: 329px;
-        height: 565px;*/
         width: 100%;
     }
     .event-grid-item3 {
-        /*width: 329px;
-        height: 565px;*/
         width: 100%;
     }
     .traning-grid-item:nth-child(1) .traning-name {
@@ -1298,7 +1286,6 @@ h3 {
     .event-grid-title {
         margin-left: 20px;
     }
-    /*Здесь расписание тренировок делаем в 1 столбец*/
     .traning-grid-item img {
         position: absolute;
         bottom: 20px;
@@ -1503,8 +1490,6 @@ h3 {
     }
     .company-box-item8 {
         background-image: url(../images/trainer.png);
-        /*width: 581px;
-        height: 335px;*/
         height: 60vw;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1574,6 +1559,10 @@ h3 {
     .law-text {
         display: block;
         text-align: center;
+    }
+    .law-web {
+        display: flex;
+        justify-content: center;
     }
 }
 
