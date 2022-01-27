@@ -658,9 +658,16 @@ h3 {
     padding: 22px 43px;
     border: none;
     background-color: #FBF138;
+    color: #2B3541;
     width: 100%;
     display: none;
 }
+.btn-subscribe-after:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+    cursor: pointer;
+}
+
 
 /* О компании */
 .company-box-item1 h3 {
@@ -831,9 +838,16 @@ h3 {
     text-decoration: none;
 }
 .footer-inst-face {
+    /*display: flex;
+    align-items: center;
+    gap: 30px;*/
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0;
+    width: 80px;
+    opacity: 0.8;
 }
 .footer-button-inst {
     align-items: center;
@@ -841,8 +855,8 @@ h3 {
     cursor: pointer;
     border: none;
     padding: 0;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     transform: scale(1);
     transition: 0.3s;
 }
@@ -855,8 +869,8 @@ h3 {
     cursor: pointer;
     border: none;
     padding: 0;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     transform: scale(1);
     transition: 0.3s;
 }
