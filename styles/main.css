@@ -1593,8 +1593,7 @@ h3 {
         display: none;
     }
     .header-gym {
-        display: flex;
-        flex-grow: 0;
+        display: block;
     }
     .header-logo {
         width: 78px;
