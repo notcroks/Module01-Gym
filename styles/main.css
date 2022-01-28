@@ -998,6 +998,8 @@ h3 {
 .btn-popup {
     margin: 0 auto;
     display: block;
+    text-decoration: none;
+    color: #2B3541;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
@@ -1005,7 +1007,12 @@ h3 {
     border: none;
     background-color: #FBF138;
     cursor:pointer;
-    color: #2B3541;
+    
+}
+.btn-popup:hover {
+    color: #FBF138;
+background-color: #2B3541;
+cursor: pointer;
 }
 .popup-close {
     display: block;
@@ -1051,6 +1058,7 @@ h3 {
     line-height: 27px;
     max-width: 342px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .popup-form {
     margin: 0 auto;
@@ -1662,13 +1670,11 @@ h3 {
         right: 276px;
         top: 49px;
     }
-
     .footer-nav {
         display: flex;
         justify-content: space-between;
         gap: 0;
     }
-    
     .popup {
         max-width: 360px;
         margin: 20px auto;
@@ -1687,7 +1693,7 @@ h3 {
         width: 31px;
         height: 31px;
         top: 34px;
-        left: 25px;
+        left: 16px;
     }
     .popup-text {
         font-size: 16px;
@@ -1699,11 +1705,11 @@ h3 {
         padding-bottom: 40px;
     }
     .popup-email {
-        padding: 21px 101px 21px 25px;
+        padding: 21px 93px 21px 25px;
         margin-left: 10px;
     }
     .popup-phone {
-        padding: 21px 100px 21px 25px;
+        padding: 21px 93px 21px 25px;
         margin-left: 10px;
     }
 }
