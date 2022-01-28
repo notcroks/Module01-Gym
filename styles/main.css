@@ -1003,7 +1003,7 @@ h3 {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
-    padding: 22px 195px;
+    padding: 22px 186px;
     border: none;
     background-color: #FBF138;
     cursor:pointer;
@@ -1064,28 +1064,32 @@ cursor: pointer;
 .popup-form {
     margin: 0 auto;
     padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .popup-email {
-    margin: 0 auto;
     background-color: #FFFFFF;
 	font-size: 18px;
     font-weight: 400;
-	padding: 21px 259px 21px 25px;
     border: none;
     margin-bottom: 20px;
-    margin-left: 50px;
     outline: none;
+    width: 100%;
+    max-width: 94%;
+    padding-left: 25px;
+    height: 60px;
 }
 .popup-phone {
-    margin: 0 auto;
     background-color: #FFFFFF;
 	font-size: 18px;
     font-weight: 400;
-	padding: 21px 259px 21px 25px;
-    border: none;
-    margin-bottom: 40px;
-    margin-left: 50px;
+	border: none;
+    margin-bottom: 20px;
     outline: none;
+    width: 100%;
+    max-width: 94%;
+    padding-left: 25px;
+    height: 60px;
 }
 
 
@@ -1681,7 +1685,7 @@ cursor: pointer;
         margin: 20px auto;
     }
     .btn-popup {
-        padding: 21px 115px;
+        padding: 21px 90px;
     } 
     .popup-title {
         padding-top: 56px;
@@ -1706,12 +1710,18 @@ cursor: pointer;
         padding-bottom: 40px;
     }
     .popup-email {
-        padding: 21px 99px 21px 25px;
-        margin-left: 10px;
+        margin-left: 0;
+        width: 100%;
+        max-width: 90.5%;
+        padding-left: 25px;
+        height: 60px;
     }
     .popup-phone {
-        padding: 21px 99px 21px 25px;
-        margin-left: 10px;
+        margin-left: 0;
+        width: 100%;
+        max-width: 90.5%;
+        padding-left: 25px;
+        height: 60px;
     }
 }
 
@@ -2140,7 +2150,7 @@ cursor: pointer;
         margin: 20px auto;
     }
     .btn-popup {
-        padding: 21px 77px;
+        padding: 21px 58px;
     }
     .yellow-count {
         width: 31px;
@@ -2155,13 +2165,19 @@ cursor: pointer;
         margin-bottom: 28px;
     }
     .popup-email {
-        padding: 21px 45px 21px 25px;
-        margin-left: 10px;
+        margin-left: 0;
+        width: 100%;
+        max-width: 87.5%;
+        padding-left: 25px;
+        height: 60px;
         font-size: 16px;
     }
     .popup-phone {
-        padding: 21px 45px 21px 25px;
-        margin-left: 10px;
+        margin-left: 0;
+        width: 100%;
+        max-width: 87.5%;
+        padding-left: 25px;
+        height: 60px;
         font-size: 16px;
     }
 }
