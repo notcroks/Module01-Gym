@@ -2133,6 +2133,36 @@ cursor: pointer;
     .law {
         font-size: 10px
     }
+
+    .popup {
+        max-width: 280px;
+        margin: 20px auto;
+    }
+    .btn-popup {
+        padding: 21px 77px;
+    }
+    .yellow-count {
+        width: 31px;
+        height: 31px;
+        top: 34px;
+        left: 16px;
+    }
+    .popup-text {
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 230px;
+        margin-bottom: 28px;
+    }
+    .popup-email {
+        padding: 21px 37px 21px 25px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .popup-phone {
+        padding: 21px 37px 21px 25px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 388px) {
