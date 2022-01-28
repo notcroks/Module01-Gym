@@ -1005,6 +1005,7 @@ h3 {
     border: none;
     background-color: #FBF138;
     cursor:pointer;
+    color: #2B3541;
 }
 .popup-close {
     display: block;
