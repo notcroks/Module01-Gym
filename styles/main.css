@@ -1614,7 +1614,7 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-basis: content;
+        flex-basis: 8%;
     }
     .event-grid-title {
         font-size: 22px;
