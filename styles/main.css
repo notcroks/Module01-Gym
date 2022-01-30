@@ -522,7 +522,7 @@ h3 {
     background-color: #F3F3F3;
 }
 .subscribe-header {
-    max-width: 640px;
+    max-width: 620px;
     margin: 0 auto;
 }
 .subscribe-count {
@@ -550,8 +550,7 @@ h3 {
 .subscribe-form {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    justify-content: space-between;
     padding-top: 169px;
 }
 .subscribe-email {
@@ -578,12 +577,8 @@ h3 {
 }
 .subscribe-label {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     margin-top: 13px;
-    margin-bottom: 0;
-    padding-bottom: 86px;
-    padding-left: 3px;
 }
 .subscribe-label-default {
     display: none;
@@ -628,6 +623,7 @@ h3 {
     margin: auto;
     margin-left: 0;
     opacity: 0.5;
+    margin-bottom: 86px;
 }
 .subscribe-label-text a {
     font-size: 11px;
@@ -1790,13 +1786,12 @@ cursor: pointer;
     .btn-subscribe-after {
         display: block;
     }
-    .subscribe-label {
-        padding-left: 0px;
-        padding-bottom: 50px;
-    }
     .subscribe-email-after {
         padding: 21px 0px 21px 19px;
         width: 97%;
+    }
+    .subscribe-label-text {
+        margin-bottom: 40px;
     }
     .btn-count {
         right: 276px;
@@ -2102,9 +2097,6 @@ cursor: pointer;
     .subscribe-email-after {
         width: 96%;
     }
-    .subscribe-label {
-        padding-bottom: 40px;
-    }
     .company-box1 {
         margin-top: 0;
         /*height: 165px;*/
@@ -2129,27 +2121,6 @@ cursor: pointer;
     .company-box2 .company-title {
         margin-bottom: 16px;
     }
-    /*.company-box-item {
-        height: 123px;*/
-    }
-    /*.company-p-item3 {
-        max-width: 208px;
-    }
-    .company-p-item4 {
-        max-width: 223px;
-    }
-    .company-p-item5 {
-        max-width: 184px;
-    }
-    .company-p-item6 {
-        max-width: 184px;
-    }*/
-    /*.company-box-item6 {
-        height: 140px;
-    }*/
-    /*.company-box-item7 {
-        height: 90px;
-    }*/
     .btn-company-7 {
         padding: 20px 0;
         width: 100%;
