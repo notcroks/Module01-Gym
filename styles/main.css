@@ -180,7 +180,7 @@ h3 {
     font-weight: 400;
     font-size: 18px;
     max-width: 297px;
-    line-height: 27px;
+    line-height: 150%;
     color: #2B3541;
     margin: 0;
     margin-bottom: 40px;
@@ -271,7 +271,7 @@ h3 {
     color: #2B3541;
     font-size: 28px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 125%;
     max-width: 260px;
 }
 .event-grid-name {
@@ -509,7 +509,7 @@ h3 {
     overflow: hidden;
     max-height: 0;
     transition: 0.3s linear;
-    line-height: 1.5;
+    line-height: 150%;
     margin-top: 10px;
 }
 .traning-grid-item:hover .traning-description {
@@ -676,7 +676,7 @@ h3 {
 .company-p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 150%;
     margin: 0;
     opacity: 0.6;
 }
@@ -838,9 +838,6 @@ h3 {
     text-decoration: none;
 }
 .footer-inst-face {
-    /*display: flex;
-    align-items: center;
-    gap: 30px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1034,7 +1031,7 @@ cursor: pointer;
     padding-top: 60px;
     font-size: 28px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 125%;
     max-width: 403px; 
     margin-bottom: 18px;
     text-align: center;
@@ -1055,7 +1052,7 @@ cursor: pointer;
     margin: 0 auto;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 150%;
     max-width: 342px;
     margin-bottom: 40px;
     text-align: center;
@@ -1177,13 +1174,10 @@ cursor: pointer;
     h3 {
         font-size: 37px;
     }
-
-    /*Ввожу новое*/
     .bg {
         padding-top: 20px;
     }
     .bg-title {
-        /*margin-bottom: 251px;*/
         margin-bottom: 146px;
     }
     .box-image {
@@ -1197,9 +1191,6 @@ cursor: pointer;
     .bg-down {
         margin-top: 240px;
     }
-
-    /*Ввожу новое*/
-
     .event-grid-item1 {
         width: 100%;
     }
@@ -1219,8 +1210,6 @@ cursor: pointer;
         display: block;
     }
     .footer-item {
-        /*display: block;
-        margin: 0 auto;*/
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1233,76 +1222,12 @@ cursor: pointer;
     .footer-nav {
         display: flex;
         justify-content: space-between;
-        /*gap: 0;*/
         gap: 60px;
     }
 }
 
 @media (max-width: 1061px) {
-   
-    /*Ввожу новое*/
-    /*.bg-title {
-        margin-bottom: 43px;
-    }*/
 
-
-    /*Ввожу новое*/
-
-    /*.bg-flex {
-        flex-direction: column;
-    }
-    .bg {
-        padding-top: 20px;
-        padding-bottom: 0;
-        max-width: 550px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
-    .bg-text {
-        margin-left: 0;
-    }
-    .bg-link {
-        margin-left: 0;
-    }
-    .bg-down {
-        display: none;
-    }
-    .bg-box {
-        right: 0;
-        position: relative;
-        left: 1vw;
-        max-width: 100%;
-        height: 78.5vw;
-    }
-    .box-gradient-left
-    .box-gradient-right
-    .box-image {
-        width: 96%;
-        height: 95%;
-        position: relative;
-        top: 4px;
-        right: 0px;
-        -o-object-fit: contain;
-           object-fit: contain;
-    }
-    .box-gradient-right {
-        height: 100%;
-    }
-    .box-gradient-left {
-        height: 100%;
-    }
-    .box-image {
-        top: 0;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        -o-object-fit: fill;
-           object-fit: fill;
-    }
-    .main-banner {
-        margin-bottom: 100px;
-    }
-    */
     .event-grid-item1:nth-child(1) {
         grid-area: a;
         height: 60vw;
@@ -1501,10 +1426,9 @@ cursor: pointer;
     }
 }
 
-/*Ввожу новое*/
+
 @media (max-width: 945px) {
    
-    
     .bg-title {
         margin-bottom: 43px;
     }
@@ -1515,7 +1439,6 @@ cursor: pointer;
         font-size: 26px;        
     }
     .bg-flex {
-        /*flex-direction: column;*/
         flex-direction: row;
     }
     .bg {
@@ -1530,7 +1453,6 @@ cursor: pointer;
     .bg-text {
         margin-left: 0;
         font-size: 16px;
-        line-height: 150%;
     }
     .bg-link {
         margin-left: 0;
@@ -1544,7 +1466,6 @@ cursor: pointer;
         position: relative;
         left: 1vw;
         max-width: 100%;
-        /*height: 78.5vw;*/
         height: 48vw;
         width: 85vw;
     }
@@ -1629,12 +1550,8 @@ cursor: pointer;
         background-color: #2B3541;
         cursor: pointer;
     }
-   
     .company-box-item {
         width: 100%;
-        /*max-width: 800px;
-        height: 125px;
-        margin: 0 auto;*/
     }
     .company-box-item8 {
         background-image: url(../images/trainer.png);
@@ -1645,27 +1562,6 @@ cursor: pointer;
         position: relative;
         margin-bottom: 80px;
     }
-    /*.company-box-item1:nth-child(1) {
-        grid-area: a;
-    }
-    .company-box-item2:nth-child(2) {
-        display: none;
-    }
-    .company-box-item3:nth-child(3) {
-        grid-area: c;
-    }
-    .company-box-item4:nth-child(4) {
-        grid-area: d;
-    }
-    .company-box-item5:nth-child(5) {
-        grid-area: e;
-    }
-    .company-box-item6:nth-child(6) {
-        grid-area: f;
-    }
-    .company-box-item7:nth-child(7) {
-        grid-area: g;
-    }*/
     .company-box-item2 {
         display: none;
     }
@@ -1683,30 +1579,10 @@ cursor: pointer;
         margin-top: 80px;
         justify-content: start;
         margin-bottom: 40px;
-        /*gap: 0;*/
     }
     .company-p-item1 {
         margin-bottom: 0;
     }
-    /*.company-box2 {
-        margin-bottom: 0px;
-        margin-top: 20px;
-    }
-    .company-box {
-        display: grid;
-        justify-items: center;
-        grid-template-areas: 'a'
-                             'c'
-                             'd'
-                             'e'
-                             'f'
-                             'g';
-    }*/
-
-    /*display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    gap: 20px;*/
-
     .law {
         display: block;
         text-align: center;
@@ -1759,8 +1635,6 @@ cursor: pointer;
         width: 100%;
         height: 78.5vw;
     }
-
-
     .traning-header p {
         font-size: 22px;
     }
@@ -1768,9 +1642,8 @@ cursor: pointer;
         font-size: 32px;
     }
     .traning-title {
-        max-width: 220px;
+        max-width: 180px;
     }
-
     .subscribe-header {
         padding-bottom: 40px;
     }
@@ -1811,7 +1684,7 @@ cursor: pointer;
     .popup-title {
         padding-top: 56px;
         font-size: 16px;
-        line-height: 19.2px;
+        line-height: 120%;
         max-width: 230px; 
         margin-bottom: 16px;
     }
@@ -1823,7 +1696,6 @@ cursor: pointer;
     }
     .popup-text {
         font-size: 16px;
-        line-height: 24px;
         max-width: 230px;
         margin-bottom: 28px;
     }
@@ -1870,20 +1742,16 @@ cursor: pointer;
         font-size: 16px;
     }
     .traning-description {
-        line-height: 110%;
+        line-height: 150%;
     }
     .company-box-item8 {
         margin-bottom: 60px;
     }
-
-
     .company-box2 {
         grid-template-columns: 270px;
         grid-auto-flow: row;
         gap: 40px;
     }
-
-
     .footer {
         background-color: white;
     }
@@ -1906,9 +1774,6 @@ cursor: pointer;
     h1 {
         font-size: 26px;
     }
-    .bg-title {
-        line-height: 32.5px;
-    }
     h2 {
         font-size: 26px;
     }
@@ -1916,9 +1781,7 @@ cursor: pointer;
         margin-left: 0;
     }
     .bg-text {
-        font-size: 16px;
         max-width: 290px;
-        line-height: 24px;
     }
     .bg-link {
         padding: 20px 0;
@@ -1947,15 +1810,16 @@ cursor: pointer;
     }
     .event-grid-title {
         font-size: 16px;
-        line-height: 19.2px;
         max-width: 120px;
     }
     .traning-title {
-        line-height: 31.69px;
+        line-height: 125%;
     }
     .traning-header p {
         font-size: 16px;
         padding-top: 10px;
+        line-height: 120%;
+        text-align: end;
     }
     .p-date {
         font-size: 16px;
@@ -1965,8 +1829,7 @@ cursor: pointer;
     }
     .traning-grid-item {
         font-size: 12px;
-        line-height: 18px;
-        height: 130px;
+        height: 160px;
     }
     .traning-grid-item img {
         width: 10vw;
@@ -1974,7 +1837,7 @@ cursor: pointer;
     }
     .traning-grid-item img {
         position: absolute;
-        bottom: 20px;
+        bottom: 55px;
         transition: 0.3s;
     }
     .traning-grid-item4 img {
@@ -1983,22 +1846,22 @@ cursor: pointer;
         transition: 0.3s;
     }
     .traning-grid-item:nth-child(1):hover img {
-        bottom: 30px;
+        bottom: 65px;
     }
     .traning-grid-item:nth-child(2):hover img {
-        bottom: 30px;
+        bottom: 65px;
     }
     .traning-grid-item:nth-child(3):hover img {
-        bottom: 30px;
+        bottom: 65px;
     }
     .traning-grid-item:nth-child(4):hover img {
         bottom: 55px;
     }
     .traning-grid-item:nth-child(5):hover img {
-        bottom: 30px;
+        bottom: 65px;
     }
     .traning-grid-item:nth-child(6):hover img {
-        bottom: 30px;
+        bottom: 65px;
     }
     .traning-grid-item:nth-child(1)
     .traning-name {
@@ -2091,7 +1954,7 @@ cursor: pointer;
         padding-bottom: 40px;
     }
     .subscribe-title {
-        line-height: 31.69px;
+        line-height: 125%;
         padding-top: 57px;
     }
     .subscribe-email-after {
@@ -2099,12 +1962,11 @@ cursor: pointer;
     }
     .company-box1 {
         margin-top: 0;
-        /*height: 165px;*/
         margin-bottom: 0;
     }
     .company-p {
         font-size: 16px;
-        line-height: 24px;
+        line-height: 150%;
     }
     .company-p-item1 {
         margin-top: 16px;
@@ -2177,11 +2039,11 @@ cursor: pointer;
         padding: 8px 15px;
     }
     .traning-description {
-        line-height: 14px;
+        line-height: 150%;
         margin: 0 auto;
     }
     .traning-name {
-        line-height: 16px;
+        line-height: 120%;
     }
     .traning-grid-item:nth-child(1)
     .traning-name {
@@ -2275,7 +2137,7 @@ cursor: pointer;
     }
     .popup-text {
         font-size: 15px;
-        line-height: 22px;
+        line-height: 125%;
         max-width: 230px;
         margin-bottom: 28px;
     }
@@ -2294,19 +2156,6 @@ cursor: pointer;
         padding-left: 25px;
         height: 60px;
         font-size: 16px;
-    }
-}
-
-@media (max-width: 388px) {
-    .event-grid-title {
-        font-size: 12px;
-        max-width: 90px;
-    }
-    .event-grid-date {
-        margin-bottom: 8px;
-    }
-    .traning-description {
-        line-height: 14px;
     }
 }
 
