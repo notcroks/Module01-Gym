@@ -27,8 +27,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .header-item {
     display: flex;
@@ -50,6 +50,7 @@ h3 {
     list-style-type: none;
     padding-left: 0;
     gap: 54px;
+    margin: 0;
 }
 .header-nav a,
 .header-nav-modal a {
@@ -210,11 +211,8 @@ h3 {
 
 
 /* Ближайшие события */
-.event {
-    margin-top: 20px;
-}
-.event-title {
-    padding-bottom: 40px;
+.event-header {
+    margin-bottom: 40px;
 }
 .event-grid {
     display: grid;
@@ -1429,6 +1427,10 @@ cursor: pointer;
 
 @media (max-width: 945px) {
    
+    .header {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
     .bg-title {
         margin-bottom: 43px;
     }
@@ -1590,10 +1592,6 @@ cursor: pointer;
 }
 
 @media (max-width: 760px) {
-    header {
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
     .header-nav {
         display: none;
     }
@@ -1628,6 +1626,10 @@ cursor: pointer;
 
 @media (max-width: 690px) { 
    
+    .header {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
     .bg-flex {
         flex-direction: column;
     }
@@ -1796,6 +1798,9 @@ cursor: pointer;
     h3 {
         font-size: 26px;
         line-height: 125%;
+    }
+    .event-header {
+        margin-bottom: 20px;
     }
     .event-title {
         padding-bottom: 20px;
