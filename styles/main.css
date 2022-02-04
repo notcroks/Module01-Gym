@@ -28,7 +28,7 @@ h3 {
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 28px;
 }
 .header-item {
     display: flex;
@@ -114,7 +114,8 @@ h3 {
 
 /*  Онлайн тренировки */
 .main-banner {
-    margin-bottom: 150px;
+    margin-bottom: 137px;
+    /*margin-bottom: 150px;*/
 }
 .bg-flex {
     display: flex;
@@ -152,10 +153,12 @@ h3 {
 }
 .box-image {
     position: absolute;
-    top: 40px;
+    top: 0;
     right: -97px;
-    width: 984px;
-    height: 809px;
+    width: 977px;
+    height: 846px;
+    /*width: 984px;
+    height: 809px;*/
 }
 .bg-title {
     display: block;
@@ -809,7 +812,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 25.5%;
+    flex-basis: 25.3%;
     background-color: transparent;
     padding: 0;
     height: 30px;
@@ -834,6 +837,7 @@ h3 {
     font-size: 16px;
     color: #2B3541;
     text-decoration: none;
+    line-height: 150%;
 }
 .footer-inst-face {
     display: flex;
@@ -841,7 +845,7 @@ h3 {
     justify-content: space-between;
     background-color: transparent;
     padding: 0;
-    width: 80px;
+    width: 87px;
 }
 .footer-button-inst {
     align-items: center;
@@ -849,9 +853,7 @@ h3 {
     cursor: pointer;
     border: none;
     padding: 0;
-    width: 30px;
-    height: 30px;
-    transform: scale(1);
+    transform: scale(0.9);
     transition: 0.3s;
 }
 .footer-button-inst:hover {
@@ -863,9 +865,7 @@ h3 {
     cursor: pointer;
     border: none;
     padding: 0;
-    width: 30px;
-    height: 30px;
-    transform: scale(1);
+    transform: scale(0.9);
     transition: 0.3s;
 }
 .footer-button-face:hover {
@@ -1109,7 +1109,7 @@ cursor: pointer;
     .box-image {
         right: -6px;
         width: 881px;
-        height: 758px;
+        height: 796px;
     }
     .bg-down {
     margin-top: 149px;
@@ -1212,6 +1212,7 @@ cursor: pointer;
         align-items: center;
         justify-content: space-between;
         flex-basis: 55.5%;
+        margin-bottom: 30px;
     }
     nav {
         display: block;
@@ -1428,7 +1429,7 @@ cursor: pointer;
 @media (max-width: 945px) {
    
     .header {
-        padding-top: 33px;
+        margin-top: 33px;
         padding-bottom: 33px;
     }
     .bg-title {
@@ -1489,10 +1490,11 @@ cursor: pointer;
         height: 100%;
     }
     .box-image {
-        top: 0;
+        position: absolute;
+        bottom: 0;
+        top: auto;
         right: 0px;
         width: 100%;
-        height: 100%;
         -o-object-fit: fill;
            object-fit: fill;
     }
@@ -1627,7 +1629,6 @@ cursor: pointer;
 @media (max-width: 690px) { 
    
     .header {
-        padding-top: 30px;
         padding-bottom: 60px;
     }
     .bg-flex {
@@ -1636,6 +1637,10 @@ cursor: pointer;
     .bg-box {
         width: 100%;
         height: 78.5vw;
+    }
+    .box-image {
+        width: 100%;
+        height: 100%;
     }
     .traning-header p {
         font-size: 22px;
@@ -1768,6 +1773,7 @@ cursor: pointer;
         display: flex;
         justify-content: space-between;
         gap: 0;
+        margin-top: 40px;
     }
 }
 
