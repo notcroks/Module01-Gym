@@ -521,6 +521,8 @@ h3 {
 /* Подпишись на рассылку */
 .subscribe {
     background-color: #F3F3F3;
+    padding-top: 80px;
+    padding-bottom: 86px;
 }
 .subscribe-header {
     max-width: 620px;
@@ -536,13 +538,12 @@ h3 {
     border-radius: 100%;
     width: 53px;
     height: 53px;
-    top: 55px;
+    top: -21px;
     right: 565px;
     z-index: -1;
 }
 .subscribe-title {
     position: absolute;
-    padding-top: 80px;
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: left;
@@ -552,7 +553,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 169px;
+    padding-top: 86px;
 }
 .subscribe-email {
     background-color: white;
@@ -570,6 +571,7 @@ h3 {
     border: none;
     background-color: #FBF138;
     color: #2B3541;
+    transition: 0.3s;
 }
 .btn-subscribe:hover {
     color: #FBF138;
@@ -620,20 +622,17 @@ h3 {
     line-height: 150%;
     font-weight: 400;
     text-align: left;
-    color: #8F949A;
-    margin: auto;
-    margin-left: 0;
-    opacity: 0.5;
-    margin-bottom: 86px;
+    color: rgba(143, 148, 154, 0.5);
+    margin: 0;
 }
 .subscribe-label-text a {
     font-size: 11px;
     line-height: 150%;
     font-weight: 400;
-    color: #8F949A;
+    color: rgba(143, 148, 154, 0.5);
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
-    border-bottom: 1px #8F949A solid;
+    border-bottom: 1px solid rgba(143, 148, 154, 0.5);
 }
 .subscribe-label-text a:hover {
     color: #2B3541;
@@ -662,6 +661,7 @@ h3 {
     color: #2B3541;
     width: 100%;
     display: none;
+    transition: 0.3s;
 }
 .btn-subscribe-after:hover {
     color: #FBF138;
@@ -708,6 +708,7 @@ h3 {
     padding: 22px 55px;
     border: none;
     background-color: #FBF138;
+    transition: 0.3s;
 }
 .btn-company:hover {
     color: #FBF138;
@@ -891,6 +892,7 @@ h3 {
     color: #2B3541;
     margin: 0;
     opacity: 0.3;
+    transition: 0.3s;
 }
 .law-web:hover {
     cursor: pointer;
@@ -1164,7 +1166,7 @@ cursor: pointer;
 
 @media (max-width: 1135px) { /* Начинаются планшеты */
     .header-item {
-        flex-basis: 84.7%;
+        flex-basis: 62%;
     }
     h1 {
         font-size: 40px;
@@ -1227,6 +1229,10 @@ cursor: pointer;
 
 @media (max-width: 1061px) {
 
+    .header-item {
+        flex-basis: 68%;
+    }
+
     .event-grid-item1:nth-child(1) {
         grid-area: a;
         height: 60vw;
@@ -1262,6 +1268,10 @@ cursor: pointer;
         left: 0;
         bottom: 0;
         right: inherit;
+    }
+    .event-cover:hover .event-grid-name {
+        color: #2B3541;
+        background-color: #FBF138;
     }
     .event-btn-mobile {
         display: block;
@@ -1428,6 +1438,9 @@ cursor: pointer;
 
 @media (max-width: 945px) {
    
+    .header-item {
+        flex-basis: 74%;
+    }
     .header {
         margin-top: 33px;
         padding-bottom: 33px;
@@ -1445,7 +1458,7 @@ cursor: pointer;
         flex-direction: row;
     }
     .bg {
-        padding-top: 20px;
+        padding-top: 0;
         padding-bottom: 0;
         max-width: 550px;
         margin-bottom: 50px;
@@ -1504,6 +1517,10 @@ cursor: pointer;
 }    
 
 @media (max-width: 860px) {
+
+    .header-item {
+        flex-basis: 84%;
+    }
     .main-banner {
         margin-bottom: 70px;
     }
@@ -1512,7 +1529,7 @@ cursor: pointer;
     }
     .btn-count {
         right: 266px;
-        top: 50px;
+        top: -23px;
     }
     .subscribe-title {
         max-width: 300px;
@@ -1548,6 +1565,7 @@ cursor: pointer;
         padding: 22px 55px;
         border: none;
         background-color: #FBF138;
+        transition: 0.3s;
     }
     .btn-company-7:hover {
         color: #FBF138;
@@ -1651,7 +1669,8 @@ cursor: pointer;
     .traning-title {
         max-width: 180px;
     }
-    .subscribe-header {
+    .subscribe {
+        padding-top: 57px;
         padding-bottom: 40px;
     }
     .subscribe-form-before {
@@ -1675,7 +1694,7 @@ cursor: pointer;
     }
     .btn-count {
         right: 276px;
-        top: 49px;
+        top: -27px;
     }
     .footer-nav {
         display: flex;
@@ -1961,12 +1980,8 @@ cursor: pointer;
     .traning-grid {
         margin-bottom: 80px;
     }
-    .subscribe-header {
-        padding-bottom: 40px;
-    }
     .subscribe-title {
         line-height: 125%;
-        padding-top: 57px;
     }
     .subscribe-email-after {
         width: 96%;
@@ -2032,7 +2047,7 @@ cursor: pointer;
     }
     .btn-count {
         right: 255px;
-        top: 44px;
+        top: -10px;
         width: 31px;
         height: 31px;
     }
